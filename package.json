@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "An app that connects to the tvmaze api and allows you to chat about shows",
   "main": "server.js",
+  "engines": {
+    "node": "0.12.x",
+    "npm": "2.11.x"
+  },
   "scripts": {
     "test": "test"
   },
