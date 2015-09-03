@@ -8,7 +8,8 @@
     "npm": "2.11.x"
   },
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "node app.js"
   },
   "keywords": [
     "tv",
