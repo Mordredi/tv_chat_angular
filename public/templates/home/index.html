@@ -1,0 +1,11 @@
+<h1>Welcome to TVChat</h1>
+
+<form ng-submit="findShow()">
+  <input id="show" type="search" placeholder="Search for a show..." ng-model="search" name="show">
+  <button type="submit" name="search">Search</button>
+</form>
+
+<div ng-show"show">
+<h2>{{show.name}}</h2>
+<div ng-bind-html="show.summary"></div>
+</div>

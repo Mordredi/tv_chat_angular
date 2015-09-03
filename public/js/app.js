@@ -1,0 +1,1 @@
+angular.module('TVChat', ['ngRoute', 'ngStorage', 'ngSanitize']);
