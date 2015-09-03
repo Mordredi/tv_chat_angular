@@ -4,6 +4,7 @@ angular.module('TVChat').controller('ShowSearchController', function(Show, $scop
     show = $scope.search.replace(/ /g, '+');
     Show.get(show).then(function(data){
       $scope.show = data;
+      $scope.show.episodes = data._embedded.episodes;
     });
   }
 });

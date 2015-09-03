@@ -6,7 +6,10 @@
 </form>
 
 <div ng-show"show">
-<img ng-src="{{show.image.medium}}" alt="{{show.name}}" />
-<h2>{{show.name}}</h2>
-<div ng-bind-html="show.summary"></div>
+  <img ng-src="{{show.image.medium}}" alt="{{show.name}}" />
+  <h2>{{show.name}}</h2>
+  <div ng-bind-html="show.summary"></div>
+  <div ng-repeat="episode in show.episodes">
+    <p>{{episode.name}}</p>
+  </div>
 </div>
